@@ -1,18 +1,21 @@
 import { Component } from '@angular/core';
+import {SplashScreenPage} from "./splash-screen/splash-screen.page";
+import {today} from "ionicons/icons";
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+
   public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    { title: 'Stock', url: '/stock/', icon: 'albums' },
+    { title: 'Pedidos', url: '/folder/outbox', icon: 'alarm' },
+    { title: 'Clientes', url: '/folder/favorites', icon: 'bug' }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
+  rootPage: any = SplashScreenPage; // Reemplaza con el nombre correcto de tu página de carga
+  date = new Date();
+  constructor() {
+  }
+
 }
