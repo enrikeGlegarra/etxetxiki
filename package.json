@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "deploy": "ng build --base-href=/etxetxiki/"
+    "deploy": "ng build --prod --base-href=/etxetxiki/"
   },
   "private": true,
   "dependencies": {
